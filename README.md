@@ -21,11 +21,11 @@ bacnetObj = cbn( type='IP', os='windows', adapt='192.168.2.112')
 ```
 ### Create a BACnet point object to read and write
 ```python
-  Dev1234_AV0 = cbo( bacnet=bacnetObj,   // BACnet object
-                     devid=1234,         // Device ID
-                     objid=0,            // Object ID
-                     objtp="AV",         // Object Type, e.g. AV,BV ...
-                     prior=8)            // Priority
+  Dev1234_AV0 = cbo( bacnet=bacnetObj,   % BACnet object
+                     devid=1234,         % Device ID
+                     objid=0,            % Object ID
+                     objtp="AV",         % Object Type, e.g. AV,BV ...
+                     prior=8)            % Priority
 ```
 Read
 ```python
